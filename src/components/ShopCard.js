@@ -2,11 +2,13 @@ function ShopCard(props) {
   const {card} = props;
   return (
     <div className="shop-card">
-      <div>{card.name}</div>
-      <div>{card.color}</div>
-      <img src={card.img} alt=""></img>
-      <div>{'$' + card.price}</div>
-      <button>Add to card</button>
+      <h3>{card.name}</h3>
+      <div className="shopCard-color">{card.color}</div>
+      <img src={card.img} alt="" className="shopCard-image"></img>
+      <div className='shopCard-wrapper'>
+        <div className="shopCard-price">{'$' + card.price}</div>
+        <button className="shopCard-button">Add to card</button>
+      </div>
     </div>
   )
 }

@@ -47,10 +47,9 @@ export default class Store extends React.Component {
   }
 
   onSwitch(event) {
-    let icon = event.target.textContent;
     this.setState({
       icon: event.target.textContent === "view_module" ? "view_list" : "view_module",
-      view: event.target.textContent === "view_module" ? "list" : "cards",
+      view: event.target.textContent === "view_list" ? "list" : "cards",
     });
   }
 

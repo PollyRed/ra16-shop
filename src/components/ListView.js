@@ -1,12 +1,12 @@
-import ShopCard from './ShopCard';
+import ShopItem from './ShopItem';
 
 function ListView(props) {
   const {cards} = props;
 
   return (
-    <div>
+    <div className="list-view">
         {cards.map((card, index) => {
-          return <ShopCard key={index} card={card}></ShopCard>
+          return <ShopItem key={index} card={card}></ShopItem>
         })}
     </div>
   )

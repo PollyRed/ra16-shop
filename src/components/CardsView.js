@@ -4,7 +4,7 @@ function CardsView(props) {
   const {cards} = props;
 
   return (
-    <div>
+    <div className="cards-view">
         {cards.map((card, index) => {
           return <ShopCard key={index} card={card}></ShopCard>
         })}
