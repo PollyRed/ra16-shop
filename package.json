@@ -1,6 +1,7 @@
 {
   "name": "ra16-shop",
   "version": "0.1.0",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/4458l9e5me5eirwa?svg=true)](https://ci.appveyor.com/project/PollyRed/ra16-shop)",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
